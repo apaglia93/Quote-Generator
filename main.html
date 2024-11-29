@@ -10,12 +10,20 @@
 
   <body class='grid-container'>
     <header class="header-container">
-        <h1 id="header">Movie Quote Generator</h1>
+        <h1 class="header">Movie Quote Generator</h1>
     </header>
 
-    <main class="generator">
-        <p class="generator-quote">Press the button to generate a random movie quote.</p>
-        <button id="generator-btn">Generate</button>
+    <main class="generator-container">
+        <div class="quote-container">
+            <p id="quote">Press the button to generate a random movie quote!</p>
+            <div class="reference-container">
+                <p class="dash">- </p>
+                <p id="movie"></p>
+                <p class="comma">, </p>
+                <p id="year"></p>
+            </div>
+        </div>
+        <button class="generator-btn">Generate</button>
     </main>
 
     <script src="main.js"></script>
