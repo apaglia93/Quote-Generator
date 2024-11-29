@@ -10,11 +10,10 @@ The app has a very simple interface - click a button and watch as a random movie
 This app can be used as a practice project of your own as there are still many more improvements that can be made to it. A few ideas come to mind:
 
 -   create filters for movie genre, year, etc
--   make the app more mobile screen friendly
 -   convert the movie array into a SQL database and practice backend skills
 
 ## Technologies 
-HTML, CSS, and Javascript. Nothing crazy! I used a spreadsheet to create the 100 movie quotes that get appended into my array and included a CSV of the data for future use.
+HTML, CSS, and Javascript. Nothing crazy! I used a spreadsheet to create the 100 movie quotes that build out my array. The array is made up of objects with three keys - quote, title, and year - and can be edited to hold more keys in the future in case more data is needed. 
 
 ## Collaborators 
 Alex Paglia
