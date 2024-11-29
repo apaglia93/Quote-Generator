@@ -40,19 +40,20 @@
     color: darkblue
 }
 
-.generator-btn {
+#generator-btn {
     grid-area: 9/4/10/8;
     background-color: darkblue;
     color: white;
     border-radius: 0.5rem;
     border: none;
+    font-size: 1rem;
 }
 
-.generator-btn:hover {
+#generator-btn:hover {
     cursor: pointer;
 }
 
-#quote, .reference-container {
+#quote, #reference-container {
     width: 80%;
     margin: 0 auto;
 }
@@ -61,8 +62,7 @@
     font-size: 1.5rem;
 }
 
-.reference-container {
-    display: flex;
+#reference-container {
     justify-content: end;
     font-size: 0.9rem;
     font-style: italic;
