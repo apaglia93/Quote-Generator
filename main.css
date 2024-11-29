@@ -22,7 +22,7 @@
 }
 
 .generator-container {
-    grid-area: 3/4/7/10;
+    grid-area: 3/3/8/11;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -68,4 +68,48 @@
     font-style: italic;
     margin-top: 0.5rem;
     display: none;
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 14px;
+    }
+
+    .header-container {
+        grid-area: 2/2/3/12;
+    }
+
+    .generator-container {
+        grid-area: 3/2/8/12;
+    }  
+
+    .quote-container {
+        grid-area: 2/2/8/10;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    .grid-container {
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .header-container {
+        grid-area: 2/1/2/4;
+        align-content: start;
+    }
+
+    .generator-container {
+        grid-area: 3/1/7/4;
+    }  
+
+    .quote-container {
+        grid-area: 1/1/8/11;
+        width: 95%;
+        margin: 0 auto;
+    }
 }
