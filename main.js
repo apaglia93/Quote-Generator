@@ -528,9 +528,8 @@ function getIndex() {
     return Math.floor(Math.random() * movieQuotes.length)
 }
 
-//Event handlers go here
-generateBtn.onmousedown = function() {
-    generateBtn.style.backgroundColor = 'white'
+function generateBtnDown() {
+  generateBtn.style.backgroundColor = 'white'
     generateBtn.style.color = 'darkblue'
 }
 
@@ -539,4 +538,7 @@ function generateBtnUp() {
   generateBtn.style.color = ''
 }
 
-generateBtn.onclick = quoteGenerator
+//Event handlers go here
+generateBtn.addEventListener('mousedown', generateBtnDown)
+generateBtn.addEventListener('mouseup', generateBtnUp)
+generateBtn.addEventListener('click', quoteGenerator)
