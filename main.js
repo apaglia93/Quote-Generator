@@ -506,7 +506,7 @@ const movieQuotes = [{
     "year": 1997
   }]
 
-//Functions go here
+//Event handle functions go here
 function quoteGenerator() {
     //randomly select a quote from our movie array by generating a random index between 0 and moviesQuotes length
     let index = getIndex()
@@ -527,16 +527,27 @@ function quoteGenerator() {
 function getIndex() {
     return Math.floor(Math.random() * movieQuotes.length)
 }
+function generateBtnDown() {
+  generateBtn.style.backgroundColor = 'white'
+  generateBtn.style.color = 'darkblue'
+}
+
+function generateBtnUp() {
+  generateBtn.style.backgroundColor = ''
+  generateBtn.style.color = ''
+}
+
+function handleEvent(event) {
+  if (event == 'click') {
+    quoteGenerator()
+  } else if (event == 'mouseup') {
+    generateBtnUp()
+  } else if (event == 'mousedown') {
+    generateBtnDown
+  }
+}
 
 //Event handlers go here
-generateBtn.onmousedown = function() {
-    generateBtn.style.backgroundColor = 'white'
-    generateBtn.style.color = 'darkblue'
-}
-
-generateBtn.onmouseup = function() {
-    generateBtn.style.backgroundColor = ''
-    generateBtn.style.color = ''
-}
-
-generateBtn.onclick = quoteGenerator
+['click', 'mouseup', 'mousedown'].forEach( evt=>
+  element.addEventListener(evt, handleEvent(evt))
+)
