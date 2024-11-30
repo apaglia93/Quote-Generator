@@ -528,15 +528,18 @@ function getIndex() {
     return Math.floor(Math.random() * movieQuotes.length)
 }
 
+//Optional functions to give the button press some interactivity
+function generateBtnDown() {
+  generateBtn.style.backgroundColor = 'white'
+  generateBtn.style.color = 'darkblue'
+}
+
+function generateBtnUp() {
+  generateBtn.style.backgroundColor = ''
+  generateBtn.style.color = ''
+}
+
 //Event handlers go here
-generateBtn.onmousedown = function() {
-    generateBtn.style.backgroundColor = 'white'
-    generateBtn.style.color = 'darkblue'
-}
-
-generateBtn.onmouseup = function() {
-    generateBtn.style.backgroundColor = ''
-    generateBtn.style.color = ''
-}
-
-generateBtn.onclick = quoteGenerator
+generateBtn.addEventListener('mousedown', generateBtnDown)
+generateBtn.addEventListener('mouseup', generateBtnUp)
+generateBtn.addEventListener('click', quoteGenerator)
