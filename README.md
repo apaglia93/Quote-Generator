@@ -13,7 +13,7 @@ This app can be used as a practice project of your own as there are still many m
 -   convert the movie array into a SQL database and practice backend skills
 
 ## Technologies 
-HTML, CSS, and Javascript. Nothing crazy! I used a spreadsheet to create the 100 movie quotes that build out my array. The array is made up of objects with three keys - quote, title, and year - and can be edited to hold more keys in the future in case more data is needed. 
+HTML, CSS, and Javascript. Nothing crazy! I store the quotes as a JSON object and then import it into the mains.js file. The array is made up of objects with three keys - quote, title, and year - and can be edited to hold more keys in the future in case more data is needed. 
 
 ## Collaborators 
 Alex Paglia
